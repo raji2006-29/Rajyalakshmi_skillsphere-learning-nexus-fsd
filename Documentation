@@ -1,0 +1,27 @@
+Day 1:Introduction
+Day 2:
+   About JWT
+JWT stands for json web token.
+web is the mideator for client and server.
+jwt consist some algorithms which prevents misleading of data during data transfer.
+clauses in java:
+JwtService,jwtUtil,jwtTokenProvider.
+create jwt token using generate token.
+example code for genarating ,extracting and validating
+"public class JwtUtil {
+    // Create JWT Token
+    public String generateToken(String username) {
+        String token = jwtUtil.generateToken("rahul@gmail.com"/*user name*/);
+    }
+    // Read username from token
+    public String extractUsername(String token) {
+        ...
+    }
+    // Check whether token is valid
+    public boolean validateToken(String token) {
+        ...
+    }
+}"
+headders:
+payload:the data sent to the backend
+
